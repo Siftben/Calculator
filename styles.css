@@ -13,7 +13,7 @@ body{
 
 .calculator-bg{
     background-color: lightgray;
-    margin: 48px auto;
+    margin: 40px auto;
     border-radius: 8px;
     align-items: center;
     justify-content: center;
@@ -30,20 +30,31 @@ body{
 
 .screen h1, h2{
     margin: auto;
+    margin-right: 8px;
     text-align: right;
+}
+
+.screen h1{
+    font-size: 48px;
 }
 
 .buttons-grid{
     border: 1px solid lightgray;
     display: inline-grid;
+    align-content: space-between;
     grid-template-columns: auto auto auto auto;
-    gap: 1px;
+
 }
 
 button{
-    padding: 24px;
+    padding: 22px 30px 24px 30px;
+    font-size: 20px;
 }
 
 .operation-button{
     color: blue;
+}
+
+.number-button-0{
+    grid-column: span 2;
 }
