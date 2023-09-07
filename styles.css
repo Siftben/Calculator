@@ -1,9 +1,16 @@
 html {
-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Calculator" ;
+    src: url(Font/digital-7.ttf);
+    src: url(Font/digital-7\ \(mono\).ttf);
 }
 
 *, *:before, *:after {
- box-sizing: inherit;
+    box-sizing: inherit;
+    font-family: 'Calculator';
 }
 
 body{
@@ -47,7 +54,7 @@ body{
 }
 
 button{
-    padding: 22px 30px 23px 30px;
+    padding: 25px 30px 25px 30px;
     font-size: 20px;
 }
 
