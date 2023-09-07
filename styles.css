@@ -1,0 +1,49 @@
+html {
+box-sizing: border-box;
+}
+
+*, *:before, *:after {
+ box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+    text-align: center;
+}
+
+.calculator-bg{
+    background-color: lightgray;
+    margin: 48px auto;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 500px;
+    display: flex;
+}
+
+.calculator-screen {
+    background-color: whitesmoke;
+    width: 90%;
+    height: 90%;
+}
+
+.screen h1, h2{
+    margin: auto;
+    text-align: right;
+}
+
+.buttons-grid{
+    border: 1px solid lightgray;
+    display: inline-grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 1px;
+}
+
+button{
+    padding: 24px;
+}
+
+.operation-button{
+    color: blue;
+}
