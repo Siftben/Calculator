@@ -55,6 +55,6 @@ button{
     color: blue;
 }
 
-.number-button-0{
+#button0{
     grid-column: span 2;
 }
