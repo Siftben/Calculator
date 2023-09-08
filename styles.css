@@ -16,11 +16,12 @@ html {
 body{
     margin: 0;
     text-align: center;
+    background-color: #83d4d8;
 }
 
 .calculator-bg{
     background-color: lightgray;
-    margin: 40px auto;
+    margin: 48px auto;
     border-radius: 8px;
     align-items: center;
     justify-content: center;
@@ -56,6 +57,12 @@ body{
 button{
     padding: 25px 30px 25px 30px;
     font-size: 20px;
+    font-weight: bold;
+}
+
+.number-button{
+    background-color: whitesmoke;
+    border: 1px solid lightgray;
 }
 
 .operation-button{
