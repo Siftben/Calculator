@@ -88,11 +88,15 @@ function pressOperand() {
 }
 
 function showResult() {
+  if(stack.isEmpty() || stack2.isEmpty()) return;
+
   result = Math.round(operateFunction() * 10) / 10;
   console.log(result);
   document.getElementById('result').innerHTML = stack2.printStack() + operand + stack.printStack();
   document.getElementById('screen').innerHTML = result;
   stack = new Stack();
+  stack2 = new Stack();
+  operand = '';
 }
 
 function operateFunction() {
