@@ -88,7 +88,7 @@ function pressOperand() {
 }
 
 function showResult() {
-  result = operateFunction();
+  result = Math.round(operateFunction() * 10) / 10;
   console.log(result);
   document.getElementById('result').innerHTML = stack2.printStack() + operand + stack.printStack();
   document.getElementById('screen').innerHTML = result;
@@ -109,11 +109,11 @@ function operateFunction() {
       return substract(number1, number2);
       break;
 
-    case '*':
+    case '×':
       return multiply(number1, number2);
       break;
     
-    case '/':
+    case '÷':
       return divide(number1, number2);
       break;
     
