@@ -94,6 +94,7 @@ function showResult() {
   console.log(result);
   document.getElementById('result').innerHTML = stack2.printStack() + operand + stack.printStack();
   document.getElementById('screen').innerHTML = result;
+
   stack = new Stack();
   stack2 = new Stack();
   operand = '';
@@ -161,3 +162,10 @@ resultButton.addEventListener('click', showResult);
 
 clearButton.addEventListener('click', clearStack);
 deleteButton.addEventListener('click', deleteStack);
+
+window.addEventListener('keydown', function(e){
+
+  const audio = document.querySelector(`audio[data-key="${e.code}"]`);
+  const key = document.querySelector(`.key[data-key="${e.code}"]`);
+  
+});

@@ -54,6 +54,14 @@ body{
 
 }
 
+.buttons-grid :hover{
+    background-color: lightgrey;
+}
+
+.buttons-grid :active{
+    background-color: whitesmoke;
+}
+
 button{
     padding: 25px 30px 25px 30px;
     font-size: 20px;
@@ -66,7 +74,6 @@ button{
 }
 
 .operation-button{
-    color: blue;
     padding: 0;
     font-size: 36px;
 }
